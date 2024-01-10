@@ -2,6 +2,7 @@
 <html>
 <head>
     <title>gophers.ch</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -23,9 +24,18 @@
             display: inline-block;
             text-decoration: none;
             color: blue; /* Adjust link color for visibility */
-            background: rgba(255, 255, 255, 0.7); /* Optional: Background for links for better readability */
+            background: rgba(255, 255, 255, 0.7); /* Background for links for better readability */
             padding: 10px;
             border-radius: 5px;
+        }
+
+        /* Responsive design for smaller screens */
+        @media (max-width: 600px) {
+            .meetup-link {
+                display: block; /* Stack the links vertically */
+                margin: 10px auto; /* Center the links */
+                width: 80%; /* Adjust width as needed */
+            }
         }
     </style>
 </head>
@@ -33,8 +43,8 @@
     <div class="container">
         <h1>Go Meetup Groups in Switzerland</h1>
         <div>
-            <a href="http://zh.gophers.ch" class="meetup-link">Zurich Meetup Group</a>
             <a href="http://be.gophers.ch" class="meetup-link">Bern Meetup Group</a>
+            <a href="http://zh.gophers.ch" class="meetup-link">Zurich Meetup Group</a>
         </div>
     </div>
 </body>
